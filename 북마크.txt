@@ -1,0 +1,90 @@
+2020-03-26
+
+JS문법
+
+    https://victorydntmd.tistory.com/46
+    JS 클로저 , 콜백 ..
+
+    https://pro-self-studier.tistory.com/89
+    JS 동기형 비동기형 
+
+    https://webclub.tistory.com/category/JavaScript
+    !JS 지식 모아둔것 
+
+    https://jeong-pro.tistory.com/category/Javascript/Javascript%28ES6%29
+    JS ES6 문법 자료구조 
+
+    https://joshua1988.github.io/web-development/javascript/javascript-basic-summary/
+    JS 다시보기 
+
+    https://ux.stories.pe.kr/category/WEB%EA%B0%9C%EB%B0%9C%EC%9D%B4%EC%95%BC%EA%B8%B0/Vue.js
+    Vue 
+
+    https://poiemaweb.com/es6-arrow-function
+    화살표함수와 일반함수 차이 + html/css/js 정리 잘되있는 사이트 
+
+    https://hudi.kr/%EB%B9%84%EB%8F%99%EA%B8%B0%EC%A0%81-javascript-%EC%8B%B1%EA%B8%80%EC%8A%A4%EB%A0%88%EB%93%9C-%EA%B8%B0%EB%B0%98-js%EC%9D%98-%EB%B9%84%EB%8F%99%EA%B8%B0-%EC%B2%98%EB%A6%AC-%EB%B0%A9%EB%B2%95/
+    JS언어 작동순서 
+
+    https://github.com/devJang/developer-roadmap
+    JS로드맵 
+
+    https://www.zerocho.com/category/HTTP
+    제로초사이트 
+
+    https://www.freecodecamp.org/news/copying-stuff-in-javascript-how-to-differentiate-between-deep-and-shallow-copies-b6d8c1ef09cd/
+    깊은 복사 얕은 복사 비교 (영문 해독 잼 )
+
+    https://code-machina.github.io/2019/08/31/Vue-Story-Part-3.html
+    쉅게 배우는 VUE 라고 하지만 쉅지만은 않음 
+
+    https://kdydesign.github.io/2019/04/22/vue-cli3-tutorial/
+    
+    https://beomy.tistory.com/47?category=646688
+    vue 최신 
+
+    //https://poiemaweb.com/js-event
+    //공부중 
+    //https://nm817.tistory.com/10
+    //https://aboooks.tistory.com/59
+    //계획표 프로젝트 
+노래 
+    http://vocaro.wikidot.com/million
+    보컬 위키
+    https://namu.wiki/w/VOCALOID%20%EC%A0%84%EB%8B%B9%EC%9E%85%EC%84%B1#s-3.3.5.1
+    보컬로이드 전당입성
+여행 
+
+    http://korean.visitseoul.net/map-guide-book
+    서울 가이드북 사이트
+    
+    http://seoulvrar.com/event/main_event2020/
+    VR전시회 
+
+    http://blog.naver.com/PostList.nhn?blogId=airteltour&from=postList&categoryNo=62
+    여행갈곳
+
+ppt
+
+    https://ovenapp.io/
+    오븐 
+
+소설 
+    https://namu.wiki/w/%EC%9D%B4%20%EB%9D%BC%EC%9D%B4%ED%8A%B8%20%EB%85%B8%EB%B2%A8%EC%9D%B4%20%EB%8C%80%EB%8B%A8%ED%95%98%EB%8B%A4!/%EC%9E%91%ED%92%88%20%EB%B6%80%EB%AC%B8#s-2.16
+
+취업
+    https://www.jobplanet.co.kr/companies/68173/job_postings/1150615/front-end-%EA%B0%9C%EB%B0%9C%EC%9E%90/%EC%98%A4%ED%94%88%EC%84%9C%EB%B2%A0%EC%9D%B4?_rs_act=job_posting_detail&_rs_con=companies&_rs_element=sidebar_popular
+    취업 알아보는 사이트 
+    
+    https://programmers.co.kr/pages/dev-survey-2019
+    프로그래머스 취업 2019 통계
+
+    http://www.saramin.co.kr/zf_user/jobs/list/job-category?page=3&cat_key=40427&search_done=y&isAjaxRequest=0&next_cd=208&tab_type=all&sort=AD&page_count=50&type=job-category&is_param=1&isSearchResultEmpty=1&isSectionHome=0&searchParamCount=1#searchTitle
+    사람인 취업 통계 
+    
+공모전 
+    https://onoffmix.com/event/main?s=%EA%B2%8C%EC%9E%84
+
+
+피부 
+    http://www.chakanfactory.com/shop/shopdetail.html?branduid=1344068&ref=naver_open&gclid=EAIaIQobChMIxY_Ar5246AIVGamWCh3_BQFFEAQYASABEgK08fD_BwE

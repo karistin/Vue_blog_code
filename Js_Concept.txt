@@ -1,0 +1,142 @@
+2020-03-26
+
+
+내용
+    함수 ,객체 
+    비동기라는 개념  -이벤트 드리븐 프로그래밍 
+    콜백 , 프로미스 , async/await 
+    호출스택 , 이벤트루트 , 실행 컨텍스트 
+
+    프로토 타입 ( 자바랑 가장큰 차이점 ) class 는 class 가 아니다
+
+    DOM외우지 말기 쓰다보면 외움 
+
+    class X
+    디자인 패턴 => 하다보면서 참고 
+    함수형 프로그래밍 => 선택형
+
+배열 함수 (map , fliter . reduce * , every ,some ,find , findindex)
+
+    indexOf : var index =  ( arr.indexOf( searchElement(필수) , fromIndex ) )
+              fromIndex 검색을 시작할 인덱스  길이가 배열보다 크면 -1 음수면 뒤에서 부터 (오른쪽) 
+              배열에 숫자가 있으면 참 참이면 배열의 인덱스  거짓이면 -1  
+              (!==-1) 과 같이 사용하는 경우가 많다.
+
+    filter  : var new_array = arr.filter( (value(필수) , index , array ) => {callback}  , [, thisArg] )
+              thisArg는 this로 지정될 값 선택사항으로 지정 
+              return 존재 
+
+    foreach : array1.forEach( (currentValue(필수) , index , array ) => {callback} , [, thisArg]) 
+              thisArg는 this로 지정될 값 선택사항으로 지정 
+
+    map     : arr.map( (currentValue , index , array ) => {callback} , [, thisArg]) 
+              thisArg는 역시 this를 넘겨주기용
+              callback 메서드의 파라미터 callback(currentValue, index, array)
+              (현재처리되고 있는 요소, 현재 인덱스, 기존 배열)
+              포인트는 같은 길이의 새로운 배열을 반환한다는 점임
+              forEach와의 차이점은 map은 각 루프에서 return을 할 수 있음.
+              return 존재
+
+    reduce  : var reduce = ( (accumlator(누적값) , currentValue(현재값) ,
+              currentIndex(현재값 인덱스) , array(배열) ) => {callback } , 초기값 )
+              배열의 왼쪽에서부터 누적값에 함수 실행 
+              return 존재
+    
+    every   :
+
+    some    :
+
+    find    :
+
+
+    배열=>객체 이차원 으로  
+
+
+    deep copy : disconnected from the original ex) number , string , boolean
+    shallow copy : stil connected to the original value
+        => 배열 , 오브젝트 첫 인스턴스 선언시 연결됨
+        spread 연산자 사용시 처리 가능 
+            const a = {...o2}
+        !rest 연산자(spread 연산자와 혼동주의)
+            function (a,b,...c) =>reset
+
+프록시 처리 : 모든 Vue 인스턴스는 data 객체에 있는 모든 속성은 프록시 처리한다. 
+             갯체를 vue 인스턴스의 data 객체에 전달할 경우 얕은 복사가 이루어짐
+             (메모리 주소만 복사)
+
+get : 
+    1.정의
+            get prop() {...}
+            get [expression] () {...}
+
+        2.설명
+            prop : 프로퍼티를 가져올 함수 이름 expression : 함수 이름 동적할당(es6)
+            식별자로 숫자 문자 모두 가능 
+            파라미터가 없어야 한다.
+            리터럴 객체의 같은 이름의 get이나 동일한 이름의 프로퍼티를 가질수 없다.
+            ( {get x(){} , get x(){}} ) {x:... , get x(){} }
+
+        3.특징
+            getter는 객체를 초기화시 선언가능 
+            getter는 삭제 가능 
+            객체가 이미 존재 할 때,defineProperty 메소드로 getter정의 
+            동적으로 getter이름 정의 ex)
+            var expr = foo;
+            var obj ={
+                get [expr](){return "bar"}
+            } 
+            console.log(obj.foo)//bar
+            console.log(obj.expr)//defined 
+        4.장점 
+            계산 미루기 (lazy getter)
+            getter는 프로퍼티에 접근하기 전까지 그 값을 계산하지 않습니다.
+            getter의 값 계산은 실제 값이 필요할 때 이루어지고, 값이 필요하지 않다면, 계산을 하지 않습니다. 
+            즉 값이 필요하지 않다면 쓸데없는 계산을 하지 않아 cpu를 낭비하지 않게 됩니다.
+
+            캐싱 (Smart/Memorized getter)
+            최적화 방법으로 계산 미루기와 함께 캐싱하는 것이 있습니다.
+            값은 getter가 호출될 때 처음 계산되며 캐싱됩니다. 이후의 호출은 다시 계산하지 않고 이 캐시값을 반환합니다.
+
+            이러한 캐싱은 다음과 같은 경우에 유용합니다.
+            1. 값의 계산 비용이 큰 경우. (RAM이나 CPU 시간을 많이 소모하거나, worker thread를 생성하거나, 원격 파일을 불러오는 등)
+            2. 값이 당장 필요하지 않지만 나중에 사용되어야 할 경우(혹은 이용되지 않을 수도 있는 경우)
+            3. 값이 여러번 이용되지만 변경되지 않아 매번 계산할 필요가 없는 경우
+
+    set : 
+    1.정의
+            set prop(val) {...}
+            set [expression] (val) {...}
+
+        2.설명
+            setter는 프로퍼티 값이 변경되어 질 때마다 함수를 실행하는데 사용된다. 
+            prop : 프로퍼티를 가져올 함수 이름 expression : 함수 이름 동적할당(es6)
+            식별자로 숫자 문자 모두 가능 
+            한개의 파라미터만 가질 수 있다.
+            리터럴 객체의 같은 이름의 set이나 동일한 이름의 프로퍼티를 가질수 없다.
+            ( {set x(){} , set x(){}} ) {x:... , set x(){} }
+
+
+
+
+Vue @이벤트  정리 
+   click 마우스를 클릭했을 때 실행함 
+   dblclick 마우스를 더블 클릭했을 때 실행함 mouseover 마우스의 포인트가 요소 위로 올라왔을 때 실행함
+   mouseout 마우스의 포인트가 요소 밖으로 벗어났을 때 실행함
+   mousemove 마우스의 포인트가 이동했을 때 실행함 
+   mousedown 마우스의 버튼을 눌렀을 때 실행함 
+   mouseup 마우스의 버튼을 놓았을 때 실행함 
+   keydown 키보드의 키를 눌렀을 때 실행함 keyup 키보드의 키를 놓았을 때 실행함 
+   keypress 키보드의 키를 눌렀다가 놓았을 때 실행함 
+   change 요소가 변경될 때 실행함 submit <Form>이 제출될 때 실행함 
+   reset <Form>이 재설정될 때 실행함 
+   select <select>의 값이 선택되었을 때 실행함 
+   focus 태그에 포커스가 있을 때 실행함 
+   blur 태그에 포커스를 잃었을 때 실행함
+
+
+
+표기법(Case) 
+    camelCase =>    userLoginCount
+    PacscalCase =>  UserLoginCount
+    snake_case =>   user_login_count  // USER_LOGIN_CASE
+    kebab-case =>   user-login-case 
