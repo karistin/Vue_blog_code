@@ -20,6 +20,12 @@
 user.setting.json
     
 
+git 올리는 법 
+
+git config --global user.name "karistin" 
+   git config --global user.email "seongjung1109@gmail.com"
+
+
 vscode 공식 튜토리얼 
    https://demun.github.io/vscode-tutorial/git/
 
