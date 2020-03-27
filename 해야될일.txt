@@ -3,3 +3,8 @@
 2. markdown lang 으로 메모장 변경
 3. 사이트 설치  정적 ! https://heropy.blog/2018/01/10/netlify/ 
 
+https://blog.naver.com/PostView.nhn?blogId=ablue85470&logNo=221341862577&categoryNo=0&parentCategoryNo=0
+
+
+https://app.netlify.com/sites/codedocs/overview
+

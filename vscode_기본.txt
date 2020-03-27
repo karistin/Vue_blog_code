@@ -17,8 +17,7 @@
     staychan.vue-color : 하얀색 태마 
     open-in-browser :  브라우져 바로 실행 
 
-user.setting.json
-    
+
 
 git 올리는 법 
 
@@ -31,3 +30,22 @@ vscode 공식 튜토리얼
 
 깃허브 Markdown 
    https://guides.github.com/features/mastering-markdown/
+
+
+user.setting.json
+    {
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Vue Theme",
+    "git.autofetch": true , 
+    "vetur.validation.template": false ,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true 
+    },
+    "editor.formatOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.validate": [
+        "vue",
+        "html",
+        "javascript",
+    ]
+}
