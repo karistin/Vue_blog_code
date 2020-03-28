@@ -47,5 +47,6 @@ user.setting.json
         "vue",
         "html",
         "javascript",
-    ]
+    ],
+    "editor.minimap.enabled": false
 }

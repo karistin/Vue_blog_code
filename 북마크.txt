@@ -48,6 +48,13 @@ JS문법
     //https://nm817.tistory.com/10
     //https://aboooks.tistory.com/59
     //계획표 프로젝트 
+
+
+웹 폰트 적용 
+    https://wooin21.tistory.com/19
+    
+    https://material.io/design/typography/the-type-system.html#type-scale
+    구글 폰트 
 노래 
     http://vocaro.wikidot.com/million
     보컬 위키

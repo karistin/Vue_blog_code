@@ -1,13 +1,18 @@
-2020-03-27
+﻿2020-03-27
 1. 메모장 => 스마트폰 동기화 =>사이트로 대체 
 2. markdown lang 으로 메모장 변경
-3. 사이트 설치  정적 ! https://heropy.blog/2018/01/10/netlify/ 
+3. 사이트 설치  정적 
+! https://heropy.blog/2018/01/10/netlify/ 
 
 https://blog.naver.com/PostView.nhn?blogId=ablue85470&logNo=221341862577&categoryNo=0&parentCategoryNo=0
 
 https://blog.g40n.xyz/
 만들어 보고싶은 사이트 + 
 
+
+
+https://app.netlify.com/?_ga=2.229629404.1934240029.1585400366-740010567.1585400366
+netlify
 
 https://search.google.com/search-console?resource_id=https%3A%2F%2Fblogcode.netlify.com%2F
 구글 웹마스터 도구 
@@ -25,3 +30,9 @@ https://alasheep.com/blog/2019/04/28/blog-making-method
 
 https://delivan.dev/web/start-gatsby-blog/
 너도 
+
+https://webruden.tistory.com/category/Development/Vue
+참조 
+
+
+
