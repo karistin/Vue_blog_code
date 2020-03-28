@@ -21,7 +21,7 @@
 
 git 올리는 법 
 
-git config --global user.name "karistin" 
+    git config --global user.name "karistin" 
    git config --global user.email "seongjung1109@gmail.com"
 
 
