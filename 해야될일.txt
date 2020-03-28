@@ -5,8 +5,23 @@
 
 https://blog.naver.com/PostView.nhn?blogId=ablue85470&logNo=221341862577&categoryNo=0&parentCategoryNo=0
 
-
-https://app.netlify.com/sites/codedocs/overview
-
 https://blog.g40n.xyz/
 만들어 보고싶은 사이트 + 
+
+
+https://search.google.com/search-console?resource_id=https%3A%2F%2Fblogcode.netlify.com%2F
+구글 웹마스터 도구 
+
+https://appmania.tistory.com/115?category=863072
+이게 사이트 맵 
+
+
+https://vuetifyjs.com/ko/components/tooltips/
+테마 
+
+
+https://alasheep.com/blog/2019/04/28/blog-making-method
+어캐 만들었누 
+
+https://delivan.dev/web/start-gatsby-blog/
+너도 
