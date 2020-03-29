@@ -1,11 +1,9 @@
 <template>
   <ul>
     <v-layout row justify-center>
-      <router-link :to="/">
-        <button @click="actions">
-          <li>Home</li>
-        </button>
-      </router-link>
+      <button @click="actions">
+        <li>Home</li>
+      </button>
       <button @click="actions">
         <li>Posts</li>
       </button>
