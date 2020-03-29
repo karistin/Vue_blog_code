@@ -1,6 +1,7 @@
 <template>
-  <v-app>
-    <!-- <v-app-bar app color="primary" dark>
+  <div class="content">
+    <v-app>
+      <!-- <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -31,54 +32,75 @@
         <span class="mr-2">Latest Release</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
-    </v-app-bar>-->
+      </v-app-bar>-->
+      <v-container fluid>
+        <v-layout column>
+          <!-- 타이틀  -->
 
-    <h1 class="text-center">karistin's blog</h1>
-    <!-- <v-bottom-navigation :value="activeBtn" color="purple lighten-1"> -->
-    <!-- <v-menu>
-      <v-btn>
-        <span>Home</span>
-        <v-icon>mdi-history</v-icon>
-      </v-btn>
+          <h1 class="text-center">karistin's blog</h1>
 
-      <v-btn>
-        <span>Posts</span>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn>
-        <span>About</span>
-        <v-icon>mdi-map-marker</v-icon>
-      </v-btn>
-    </v-menu>-->
-
-    <v-card class="mx-auto">
-      <v-content>
-        <HelloWorld />
-      </v-content>
-    </v-card>
-  </v-app>
+          <!-- 본문  -->
+          <ul>
+            <v-layout row justify-center>
+              <button @click="actions">
+                <li>
+                  <v-flex xs2>Home</v-flex>
+                </li>
+              </button>
+              <button @click="actions">
+                <li>
+                  <v-flex xs2>Posts</v-flex>
+                </li>
+              </button>
+              <button @click="actions">
+                <li>
+                  <v-flex xs2>About</v-flex>
+                </li>
+              </button>
+            </v-layout>
+          </ul>
+        </v-layout>
+      </v-container>
+    </v-app>
+  </div>
 </template>
-
 <script>
-import HelloWorld from "./components/HelloWorld";
-
 export default {
   name: "App",
-
-  components: {
-    HelloWorld
+  data: () => ({}),
+  methods: {
+    actions() {
+      alert("click");
+    }
   },
-
-  data: () => ({
-    activeBtn: 1
-  })
+  components: {}
 };
 </script>
 <style scoped>
 h1 {
-  font-family: "Cute Font";
+  font-family: "Cute Font", cursive;
   font-size: 65px;
   color: #8bc34a;
+}
+.content {
+  max-width: 900px;
+  margin: 0px 60px auto;
+  background-color: rgb(249, 250, 292);
+}
+
+li {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+li:hover {
+  background-color: rgb(199, 200, 202);
+}
+
+ol,
+ul {
+  list-style: none;
+  font-family: "Cute Font", cursive;
+  font-size: 35px;
+  border-bottom: 1px solid black;
 }
 </style>

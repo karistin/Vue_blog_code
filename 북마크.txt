@@ -54,7 +54,10 @@ JS문법
     https://wooin21.tistory.com/19
     
     https://material.io/design/typography/the-type-system.html#type-scale
-    구글 폰트 
+    구글 폰트
+
+    https://fonts.google.com/specimen/Raleway?selection.family=Cute+Font|Raleway
+    cdn 제작  
 노래 
     http://vocaro.wikidot.com/million
     보컬 위키
@@ -78,6 +81,12 @@ ppt
 
 소설 
     https://namu.wiki/w/%EC%9D%B4%20%EB%9D%BC%EC%9D%B4%ED%8A%B8%20%EB%85%B8%EB%B2%A8%EC%9D%B4%20%EB%8C%80%EB%8B%A8%ED%95%98%EB%8B%A4!/%EC%9E%91%ED%92%88%20%EB%B6%80%EB%AC%B8#s-2.16
+
+    https://www.piku.co.kr/w/aapJap
+    ts소설
+
+    https://m.blog.naver.com/PostView.nhn?blogId=wjstjdals777&logNo=221052223287&proxyReferer=https%3A%2F%2Fwww.google.com%2F
+    
 
 취업
     https://www.jobplanet.co.kr/companies/68173/job_postings/1150615/front-end-%EA%B0%9C%EB%B0%9C%EC%9E%90/%EC%98%A4%ED%94%88%EC%84%9C%EB%B2%A0%EC%9D%B4?_rs_act=job_posting_detail&_rs_con=companies&_rs_element=sidebar_popular
