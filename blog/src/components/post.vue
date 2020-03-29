@@ -1,4 +1,6 @@
-<template></template>
+<template>
+  <div>post!</div>
+</template>
 
 <script>
 export default {};
