@@ -9,6 +9,19 @@ https://blog.naver.com/PostView.nhn?blogId=ablue85470&logNo=221341862577&categor
 https://blog.g40n.xyz/
 만들어 보고싶은 사이트 + 
 
+Home => contentsList = > slot
+
+post => tag?
+
+about! => introduction
+
+ 프로파일 이미지 
+ 간단한 포토샙 글자 ?
+
+
+
+
+
 
 
 https://app.netlify.com/?_ga=2.229629404.1934240029.1585400366-740010567.1585400366
@@ -19,6 +32,9 @@ https://search.google.com/search-console?resource_id=https%3A%2F%2Fblogcode.netl
 
 https://appmania.tistory.com/115?category=863072
 이게 사이트 맵 
+
+
+
 
 
 https://vuetifyjs.com/ko/components/tooltips/
@@ -38,3 +54,9 @@ https://webruden.tistory.com/category/Development/Vue
 
 https://developerdk.tistory.com/56
 코딩 잘하누 
+
+조아라 
+http://www.joara.com/literature/view/book_view.html?book_code=1285320&sortno=29&book_dcode=14209304
+
+kevin1109
+1q2w3e$R%T^Y

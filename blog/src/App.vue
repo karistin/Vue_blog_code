@@ -7,6 +7,7 @@
         <Header></Header>
         <!-- 메뉴  -->
         <Menu></Menu>
+        <router-view />
       </v-layout>
     </v-container>
   </v-app>

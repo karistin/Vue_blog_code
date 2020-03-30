@@ -1,30 +1,27 @@
 <template>
   <ul>
-    <v-layout row justify-center>
-      <button @click="actions">
+    <v-layout class="row justify-center">
+      <router-link class="routerLink" to="/">
         <li>Home</li>
-      </button>
-      <button @click="actions">
+      </router-link>
+      <router-link class="routerLink" to="/Post">
         <li>Posts</li>
-      </button>
-      <button @click="actions">
+      </router-link>
+      <router-link class="routerLink" to="/About">
         <li>About</li>
-      </button>
+      </router-link>
     </v-layout>
   </ul>
 </template>
 
 <script>
-export default {
-  methods: {
-    actions(e) {
-      console.log(e);
-    }
-  }
-};
+export default {};
 </script>
 
 <style scoped>
+.routerLink {
+  text-decoration: none;
+}
 li {
   padding: 0px 30px;
 }
