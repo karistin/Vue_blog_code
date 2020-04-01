@@ -15,9 +15,20 @@ post => tag?
 
 about! => introduction
 
+css 간편화 
+
+https://ofcourse.kr/html-course/i-%ED%83%9C%EA%B7%B8
+html 기초 
+
+https://dev-yakuza.github.io/ko/
+괜찮은 블로그 
+
  프로파일 이미지 
  간단한 포토샙 글자 ?
-
+    https://vuetifyjs.com/ko/styles/spacing/
+    페딩 글자 크기 
+    https://sir.kr/so_jsframework/173
+    vuetifyjs 설명 30개정도 
 
 
 
