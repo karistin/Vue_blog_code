@@ -1,6 +1,7 @@
 <template>
   <ul>
     <v-layout class="row justify-center">
+      <!-- <v-hover v-slot:default="{hover}" close-delay="100"> -->
       <router-link class="routerLink" to="/">
         <li>Home</li>
       </router-link>

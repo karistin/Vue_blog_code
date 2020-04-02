@@ -30,7 +30,7 @@
         </h4>
         <br />
         <p>
-          WEB(Vue.js) , Game(Card) , Book(Fansty) , BoradGame , Anime
+          WEB(Vue.js) , Game(Card) , Book(Fantasy) , BoardGame , Anime
           <br clear="left" />
         </p>
 
