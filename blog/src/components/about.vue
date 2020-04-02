@@ -1,6 +1,6 @@
 <template>
   <v-layout class="column justify-center pa-5">
-    <v-card class="elevation-16" id="font">
+    <v-card id="font" class="elevation-16">
       <v-card-title class="px-4 py-5" style="border-bottom: 1px solid #ebeef5;">About</v-card-title>
       <v-card-text class="pa-5">
         <img src="@/assets/proFile.jpg" class="profile-image" />
@@ -44,33 +44,17 @@
         <br />
       </v-card-text>
     </v-card>
-    <div id="disqus_thread"></div>
-    <noscript>
-      Please enable JavaScript to view the
-      <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-    </noscript>
+    <Disqus></Disqus>
   </v-layout>
 </template>
 
 <script>
-/**
- *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
- *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+import disqus from "@/components/disqus.vue";
+export default {
+  components: {
+    Disqus: disqus
+  }
 };
-*/
-(function() {
-  // DON'T EDIT BELOW THIS LINE
-  var d = document,
-    s = d.createElement("script");
-  s.src = "https://s4jns-blog.disqus.com/embed.js";
-  s.setAttribute("data-timestamp", +new Date());
-  (d.head || d.body).appendChild(s);
-})();
-export default {};
 </script>
 <style scoped>
 a,
@@ -90,11 +74,6 @@ img {
   margin: 15px;
 }
 
-#font {
-  background-color: white;
-  font-family: Raleway;
-}
-
 .profile-image {
   /* border-radius: 10px; */
   border-radius: 30%;
@@ -103,5 +82,10 @@ img {
   margin: 0 auto;
   display: block;
   float: right;
+}
+
+#font {
+  background-color: white;
+  font-family: Raleway;
 }
 </style>
