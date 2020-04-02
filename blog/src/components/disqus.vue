@@ -5,7 +5,6 @@
 <script>
 export default {
   mounted() {
-    console.log("disqus");
     try {
       // var disqus_config = (function() {
       //   this.page.url = "https://blogcode.netlify.com"; // Replace PAGE_URL with your page's canonical URL variable
@@ -19,9 +18,7 @@ export default {
         s.setAttribute("data-timestamp", +new Date());
         (d.head || d.body).appendChild(s);
       })();
-    } catch (e) {
-      console.log("err");
-    }
+    } catch (e) {}
   }
 };
 </script>
