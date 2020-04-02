@@ -37,9 +37,11 @@
         <i>Profile Image by Cowboy Bepop.</i>
         <p>S4JN = sejn = 성준이라고 부르면 됩니다.</p>
         <p>
-          대학교에서 유니티 건들다가 군데와서 웹공부 하고 있습니다.
-          <del>(둘다 독학으로 배우는거 더많은게 함정)</del>
-          <br />요즘은 Vue.js에 관심이 있어 공부중입니다.
+          대학교에서 유니티 건들다가 군데와서
+          <strong>웹공부</strong> 하고 있습니다.
+          <del>(둘다 독학이라 이여서 못 믿음직 하다)</del>
+          <br />요즘은
+          <strong>Vue.js</strong>에 관심이 있어 공부중입니다.
         </p>
         <br />
       </v-card-text>
