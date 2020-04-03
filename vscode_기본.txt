@@ -33,7 +33,7 @@ vscode 공식 튜토리얼
 
 
 user.setting.json
-    {
+{
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Vue Theme",
     "git.autofetch": true , 
@@ -48,5 +48,6 @@ user.setting.json
         "html",
         "javascript",
     ],
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on"
 }

@@ -2,13 +2,13 @@
   <ul>
     <v-layout class="row justify-center">
       <!-- <v-hover v-slot:default="{hover}" close-delay="100"> -->
-      <router-link class="routerLink" to="/">
+      <router-link class="routerLink" :to="{name:'ContentList'}">
         <li>Home</li>
       </router-link>
-      <router-link class="routerLink" to="/Post">
+      <router-link class="routerLink" :to="{name:'Post'}">
         <li>Posts</li>
       </router-link>
-      <router-link class="routerLink" to="/About">
+      <router-link class="routerLink" :to="{name:'About'}">
         <li>About</li>
       </router-link>
     </v-layout>
