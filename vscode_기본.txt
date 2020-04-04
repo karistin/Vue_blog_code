@@ -4,6 +4,7 @@
     git-scm =>2.26.0
     node.js => 12.16.1
     vscode => 1.39
+    windows6.1-KB2999226-x86
     net-framework => 4.5.2  recommend 4.7.2
 
  extension 

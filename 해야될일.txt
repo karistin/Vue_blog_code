@@ -9,6 +9,29 @@ https://blog.naver.com/PostView.nhn?blogId=ablue85470&logNo=221341862577&categor
 https://blog.g40n.xyz/
 만들어 보고싶은 사이트 + 
 
+
+
+https://www.npmjs.com/package/v-markdown-editor
+글쓰기 에디터 
+
+https://www.npmjs.com/package/frontmatter-markdown-loader
+https://hmsk.github.io/frontmatter-markdown-loader/vue.html
+md 에디터 
+
+https://shin-ae.github.io/2017/07/26/markDown/
+md 공부
+
+https://stackedit.io/app#
+md 온라인
+
+https://devinlife.com/howto/
+좋은 블로그 
+
+npm install -D raw-loader
+md읽어오기 ..
+
+
+
 Home => contentsList = > slot
 
 post => tag?

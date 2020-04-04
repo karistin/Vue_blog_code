@@ -6,15 +6,25 @@
       <div slot="text" v-html="post.text"></div>
       <div slot="btn">Read More...</div>
     </TextCard>
+    <TextCard>
+      <div slot="header" class="header">{{ posts.attributes.header}}</div>
+      <div slot="subtitle" class="subtitle">{{posts.attributes.subtitle }}</div>
+      <div slot="text" v-html="posts.html"></div>
+      <div slot="btn">Read More...</div>
+    </TextCard>
   </v-layout>
 </template>
 <script>
 import TextCard from "@/components/common/textCard.vue";
 import globalBus from "@/globalBus";
+import posts from "@/posts/first.md";
 export default {
   computed: {
     postdb() {
       return globalBus.posts;
+    },
+    posts() {
+      return posts;
     }
   },
   methods: {},
