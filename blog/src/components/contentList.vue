@@ -1,12 +1,11 @@
 <template>
-  <v-layout class="column justify-center pa-5">
+  <v-layout class="column justify-center pa-5 font">
     <TextCard v-for="(post , index) in postdb" :key="index">
-      <div slot="header">{{post.header}}</div>
-      <div slot="subtitle">{{post.subtitle}}</div>
-      <div slot="text">{{post.text}}</div>
+      <div slot="header" class="header" v-html="post.header"></div>
+      <div slot="subtitle" class="subtitle" v-html="post.subtitle"></div>
+      <div slot="text" v-html="post.text"></div>
       <div slot="btn">Read More...</div>
     </TextCard>
-    {{postdb}}
   </v-layout>
 </template>
 <script>
@@ -25,4 +24,15 @@ export default {
 };
 </script>
 <style scoped>
+.font {
+  font-family: "Raleway";
+}
+.header {
+  color: #2196f3;
+  cursor: pointer;
+}
+.subtitle {
+  color: #888;
+  cursor: pointer;
+}
 </style>
