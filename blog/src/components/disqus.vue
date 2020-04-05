@@ -18,11 +18,11 @@ export default {
         s.setAttribute("data-timestamp", +new Date());
         (d.head || d.body).appendChild(s);
       })();
-    } catch (e) {}
+    } catch (e) {
+      console.log("err");
+    }
   }
 };
 </script>
-
-
 <style scoped>
 </style>

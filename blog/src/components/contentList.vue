@@ -1,11 +1,11 @@
 <template>
   <v-layout class="column justify-center pa-5 font">
-    <TextCard v-for="(post , index) in postdb" :key="index">
+    <!-- <TextCard v-for="(post , index) in postdb" :key="index">
       <div slot="header" class="header" v-html="post.header"></div>
       <div slot="subtitle" class="subtitle" v-html="post.subtitle"></div>
       <div slot="text" v-html="post.text"></div>
       <div slot="btn">Read More...</div>
-    </TextCard>
+    </TextCard>-->
     <TextCard>
       <div slot="header" class="header">{{ posts.attributes.header}}</div>
       <div slot="subtitle" class="subtitle">{{posts.attributes.subtitle }}</div>
@@ -16,13 +16,13 @@
 </template>
 <script>
 import TextCard from "@/components/common/textCard.vue";
-import globalBus from "@/globalBus";
+// import globalBus from "@/globalBus";
 import posts from "@/posts/first.md";
 export default {
   computed: {
-    postdb() {
-      return globalBus.posts;
-    },
+    // postdb() {
+    //   return globalBus.posts;
+    // },
     posts() {
       return posts;
     }
