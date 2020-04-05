@@ -18,9 +18,7 @@ export default {
         s.setAttribute("data-timestamp", +new Date());
         (d.head || d.body).appendChild(s);
       })();
-    } catch (e) {
-      console.log("err");
-    }
+    } catch (e) {}
   }
 };
 </script>
