@@ -5,10 +5,10 @@
 <script>
 export default {
   mounted() {
-    // var disqus_config = (function() {
-    //   this.page.url = "https://blogcode.netlify.com"; // Replace PAGE_URL with your page's canonical URL variable
-    //   this.page.identifier = "https://blogcode.netlify.com"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    // })
+    // var disqus_config = function() {
+    //   this.page.url = window.location.origin;
+    //   this.page.identifier = window.location.pathname;
+    // };
     (function() {
       // DON'T EDIT BELOW THIS LINE
       var d = document,

@@ -22,6 +22,7 @@ export default {
   components: {
     Header: Header,
     Menu: Menu
+    
   }
 };
 </script>

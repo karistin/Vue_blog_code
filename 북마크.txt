@@ -104,3 +104,7 @@ ppt
 
 피부 
     http://www.chakanfactory.com/shop/shopdetail.html?branduid=1344068&ref=naver_open&gclid=EAIaIQobChMIxY_Ar5246AIVGamWCh3_BQFFEAQYASABEgK08fD_BwE
+
+
+https://forum.vuejs.org/t/import-all-components-from-a-specific-folder/9980
+vue 폴더 접근법 
