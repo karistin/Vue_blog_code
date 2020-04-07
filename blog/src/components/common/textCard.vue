@@ -27,7 +27,7 @@
 export default {
   methods: {
     page() {
-      this.$router.push({ name: "Post", params: { no: 0 } });
+      this.$router.push({ name: "Post", params: { no: "first.md" } });
     }
   }
 };
