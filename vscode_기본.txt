@@ -35,6 +35,10 @@ vscode 공식 튜토리얼
 
 user.setting.json
 {
+    "emmet.excludeLanguages": [
+
+        "markdown"
+    ],
     "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Vue Theme",
     "git.autofetch": true , 

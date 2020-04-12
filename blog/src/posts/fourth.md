@@ -1,7 +1,7 @@
 ---
 title: "Vue.js로 만들어 보는 정적 블로그 호스팅"
 subtitle: "2020-04-03"
-category: "programming"
+category: "Setting"
 active : false
 header : "# Welcome to StackEdit!
 

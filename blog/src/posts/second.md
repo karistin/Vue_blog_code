@@ -1,7 +1,7 @@
 ---
-title: "대한민국"
-subtitle: "2020-04-03"
-category: "programming"
+title: "Vuex 내용 정리"
+subtitle: "2020-04-05"
+category: "Music"
 active : false
 header : "대한민국(大韓民國), 약칭 한국(韓國)은 동북아시아의 한반도에 위치한 민주공화국이다."
 ---

@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app style="background-color: #f9fafc">
     <v-container style="max-width: 900px; 
     margin: 0px auto;">
       <v-layout column>
@@ -22,7 +22,6 @@ export default {
   components: {
     Header: Header,
     Menu: Menu
-    
   }
 };
 </script>

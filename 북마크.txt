@@ -105,6 +105,8 @@ ppt
 피부 
     http://www.chakanfactory.com/shop/shopdetail.html?branduid=1344068&ref=naver_open&gclid=EAIaIQobChMIxY_Ar5246AIVGamWCh3_BQFFEAQYASABEgK08fD_BwE
 
+    https://post.naver.com/viewer/postView.nhn?volumeNo=7594637&memberNo=8648334
+    여드름 피부 바르는 약 
 
 https://forum.vuejs.org/t/import-all-components-from-a-specific-folder/9980
 vue 폴더 접근법 

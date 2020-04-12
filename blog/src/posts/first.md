@@ -1,9 +1,10 @@
 ---
-title: "씹가능"
-subtitle: "2020-04-03"
-category: "programming"
+title: "동적 라우팅이란 무엇인가"
+subtitle: "2020-04-01"
+category: "Programming"
 active : false
-header : "A simple Read More, Read Less pen in Vue.js"
+header : "A simple Read More, Read Less pen in Vue.js Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis lectus magna
+    fringilla urna. Etiam tempor orci eu lobortis. Integer quis auctor elit sed vulputate mi sit. Lacinia"
 tags:
   - tag1
   - tag2
