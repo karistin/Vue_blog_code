@@ -3,9 +3,12 @@
     <PostCard v-for="(ca,index) in post" :key="index">
       <span slot="header" class="header">{{ca.name}}</span>
       <span slot="subtitle" class="subtitle">category</span>
-      <li v-for="(caTitle , index) in ca.title" :key="index" slot="text" class="pa-0">
-        <t class="text">{{caTitle}}</t>
-      </li>
+      <li
+        v-for="(caTitle , index) in ca.title"
+        :key="index"
+        slot="text"
+        class="pa-0 text"
+      >{{caTitle}}</li>
     </PostCard>
   </v-layout>
 </template>
@@ -55,6 +58,7 @@ export default {
 .header {
   color: #2196f3;
   font-size: 18px;
+  cursor: pointer;
 }
 .subtitle {
   color: #888;

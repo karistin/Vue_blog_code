@@ -1,14 +1,14 @@
 <template>
   <v-layout class="column justify-center pa-5 font">
     <TextCard v-for="(post , index) in posts" :key="index">
-      <div slot="header" class="header" v-html="post.attributes.title"></div>
+      <div slot="header" class="header" @click="page(index)" v-html="post.attributes.title"></div>
       <div slot="subtitle" class="subtitle" v-html="post.attributes.subtitle"></div>
-      <!-- <div slot="text" v-html="post.html.slice(0, 250)"></div> -->
+
       <div slot="text">{{post.attributes.header}}</div>
-      <div slot="btn">Read More...</div>
       <!-- <div slot="text">
-        <ex :fileName="index"></ex>
+        <ex :fileName="indexData"></ex>
       </div>-->
+      <div slot="btn" @click="page(index)">Read More...</div>
     </TextCard>
   </v-layout>
 </template>
@@ -16,11 +16,12 @@
 import TextCard from "./common/textCard.vue";
 import posts from "@/posts";
 // import ex from "@/components/ex.vue";
+import EventBus from "@/EventBus.js";
 
 export default {
   data() {
     return {
-      readMoreActivated: true
+      indexData: "first"
     };
   },
   computed: {
@@ -29,9 +30,12 @@ export default {
     }
   },
   methods: {
-    page() {
-      // console.log(index);
-      // this.$router.push({ name: "Post" });
+    page(index) {
+      // ex.props[0] = index;
+      this.indexData = index;
+      EventBus.$emit("push-msg", index);
+
+      this.$router.push({ name: "dynamicComponent", params: { no: index } });
     }
   },
   components: {

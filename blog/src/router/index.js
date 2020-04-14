@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import About from "@/components/about.vue";
 import Post from "@/components/post.vue";
 import ContentList from "@/components/contentList.vue";
+import dynamicComponent from "@/components/ex.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
     path: "/",
     name: "ContentList",
     component: ContentList
+  },
+  {
+    path: "/:no",
+    name: "dynamicComponent",
+    component: dynamicComponent
   }
 ];
 
