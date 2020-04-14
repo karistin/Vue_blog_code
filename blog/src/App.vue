@@ -30,7 +30,6 @@ export default {
   },
   methods: {
     Top() {
-      console.log(this.$router.options.scrollBehavior());
       window.scrollTo(0, 0);
     }
   }

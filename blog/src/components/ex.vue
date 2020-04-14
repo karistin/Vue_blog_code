@@ -38,7 +38,6 @@ export default {
   },
   methods: {
     fetchData() {
-      console.log(this.$route.path);
       this.markdown = require(`@/posts${this.$route.path}.md`);
       this.create = true;
     }
