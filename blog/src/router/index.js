@@ -31,7 +31,10 @@ const routes = [
 
 const router = new VueRouter({
   mode: "history",
-  routes
+  routes,
+  scrollBehavior() {
+    return { X: 0, y: 0 };
+  }
 });
 
 export default router;

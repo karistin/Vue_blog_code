@@ -3,11 +3,7 @@
     <TextCard v-for="(post , index) in posts" :key="index">
       <div slot="header" class="header" @click="page(index)" v-html="post.attributes.title"></div>
       <div slot="subtitle" class="subtitle" v-html="post.attributes.subtitle"></div>
-
       <div slot="text">{{post.attributes.header}}</div>
-      <!-- <div slot="text">
-        <ex :fileName="indexData"></ex>
-      </div>-->
       <div slot="btn" @click="page(index)">Read More...</div>
     </TextCard>
   </v-layout>
@@ -15,8 +11,6 @@
 <script>
 import TextCard from "./common/textCard.vue";
 import posts from "@/posts";
-// import ex from "@/components/ex.vue";
-import EventBus from "@/EventBus.js";
 
 export default {
   data() {
@@ -31,16 +25,13 @@ export default {
   },
   methods: {
     page(index) {
-      // ex.props[0] = index;
       this.indexData = index;
-      EventBus.$emit("push-msg", index);
 
       this.$router.push({ name: "dynamicComponent", params: { no: index } });
     }
   },
   components: {
     TextCard: TextCard
-    // ex: ex
   }
 };
 </script>

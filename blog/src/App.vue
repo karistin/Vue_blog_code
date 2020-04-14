@@ -10,6 +10,11 @@
         <router-view />
       </v-layout>
     </v-container>
+    <div style="position:fixed; bottom:15px;right:15px;" @click="Top()">
+      <a href="#header">
+        <img src="@/assets/Top.png" title="위로가기" />
+      </a>
+    </div>
   </v-app>
 </template>
 
@@ -22,6 +27,12 @@ export default {
   components: {
     Header: Header,
     Menu: Menu
+  },
+  methods: {
+    Top() {
+      console.log(this.$router.options.scrollBehavior());
+      window.scrollTo(0, 0);
+    }
   }
 };
 </script>
