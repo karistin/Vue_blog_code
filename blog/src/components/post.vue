@@ -57,7 +57,6 @@ export default {
   },
   methods: {
     page(index) {
-      console.log(index);
       this.$router.push({ name: "dynamicComponent", params: { no: index } });
     }
   },
