@@ -1,13 +1,21 @@
 <template>
   <v-layout class="column justify-center pa-5 font" :class="{ 'font' :create}">
     <Dynamic>
-      <div slot="header" :class="{ 'header' :create}">{{title}}</div>
+      <div slot="header" :class="{ 'header' :create}">
+        {{title}}
+        <v-btn color="white darken-2" black right absolute @click="pageToPost()">
+          <v-icon dark left>mdi-keyboard-backspace</v-icon>Back
+        </v-btn>
+      </div>
       <div slot="subtitle" :class="{'subtitle':create}">{{subtitle}}</div>
       <div slot="text">
         <component :is="dynamicComponent" />
+        <v-btn color="white darken-2" px-4 black left absolute @click="pageToPost()">
+          <v-icon dark left>mdi-keyboard-backspace</v-icon>Back TO Post
+        </v-btn>
       </div>
     </Dynamic>
-    <Disqus></Disqus>
+    <!-- <Disqus></Disqus> -->
   </v-layout>
 </template>
 
@@ -40,6 +48,9 @@ export default {
     fetchData() {
       this.markdown = require(`@/posts${this.$route.path}.md`);
       this.create = true;
+    },
+    pageToPost() {
+      this.$router.push({ name: "ContentList" });
     }
   },
 
@@ -52,6 +63,9 @@ export default {
 <style scoped>
 .font {
   font-family: "Raleway";
+}
+.backButton {
+  /* margin-left: 520px; */
 }
 .header {
   color: #2196f3;

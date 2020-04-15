@@ -1,14 +1,18 @@
 <template>
   <v-layout class="column justify-center pa-5 font">
-    <PostCard v-for="(ca,index) in post" :key="index">
-      <span slot="header" class="header">{{ca.name}}</span>
+    <PostCard v-for="(category,index) in categorys" :key="index">
+      <span slot="header" class="header">{{category.name}}</span>
       <span slot="subtitle" class="subtitle">category</span>
       <li
-        v-for="(caTitle , index) in ca.title"
+        v-for="(data , index) in category.datas"
         :key="index"
         slot="text"
         class="pa-0 text"
-      >{{caTitle}}</li>
+        @click="page(data.index)"
+      >
+        <span>{{data.title}}</span>
+        <span style="padding-left : 7px;">{{data.date}}</span>
+      </li>
     </PostCard>
   </v-layout>
 </template>
@@ -23,11 +27,11 @@ export default {
     };
   },
   computed: {
-    post() {
+    categorys() {
       var objs = [
-        { name: "Programming", title: [], date: [] },
-        { name: "Music", title: [], date: [] },
-        { name: "Setting", title: [], date: [] }
+        { name: "Programming", datas: [] },
+        { name: "Music", datas: [] },
+        { name: "Setting", datas: [] }
       ];
       //동적으로 카태고리 추가!
       // var category = [];
@@ -36,13 +40,25 @@ export default {
       for (var post in posts) {
         for (var obj in objs) {
           if (objs[obj].name == posts[post].attributes.category) {
-            objs[obj].title.push(posts[post].attributes.title);
-            objs[obj].date.push(posts[post].attributes.subtitle);
+            var categoryData = {
+              title: posts[post].attributes.title,
+              date: posts[post].attributes.subtitle,
+              index: post
+            };
+            objs[obj].datas.push(categoryData);
+            // objs[obj].title.push(posts[post].attributes.title);
+            // objs[obj].date.push(posts[post].attributes.subtitle);
           }
         }
       }
 
       return objs;
+    }
+  },
+  methods: {
+    page(index) {
+      console.log(index);
+      this.$router.push({ name: "dynamicComponent", params: { no: index } });
     }
   },
   components: {

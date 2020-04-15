@@ -6,7 +6,7 @@
         <li>Home</li>
       </router-link>
       <router-link class="routerLink" :to="{name:'Post'}">
-        <li>Posts</li>
+        <li>Series</li>
       </router-link>
       <router-link class="routerLink" :to="{name:'About'}">
         <li>About</li>

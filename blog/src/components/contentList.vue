@@ -3,7 +3,7 @@
     <TextCard v-for="(post , index) in posts" :key="index">
       <div slot="header" class="header" @click="page(index)" v-html="post.attributes.title"></div>
       <div slot="subtitle" class="subtitle" v-html="post.attributes.subtitle"></div>
-      <div slot="text">{{post.attributes.header}}</div>
+      <div slot="text" v-html="post.attributes.header"></div>
       <div slot="btn" @click="page(index)">Read More...</div>
     </TextCard>
   </v-layout>
@@ -14,9 +14,7 @@ import posts from "@/posts";
 
 export default {
   data() {
-    return {
-      indexData: "first"
-    };
+    return {};
   },
   computed: {
     posts() {
@@ -25,8 +23,6 @@ export default {
   },
   methods: {
     page(index) {
-      this.indexData = index;
-
       this.$router.push({ name: "dynamicComponent", params: { no: index } });
     }
   },

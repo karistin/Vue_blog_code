@@ -11,9 +11,7 @@
       </v-layout>
     </v-container>
     <div style="position:fixed; bottom:15px;right:15px;" @click="Top()">
-      <a href="#header">
-        <img src="@/assets/Top.png" title="위로가기" />
-      </a>
+      <v-icon x-large color="blue darken-2">mdi-border-top</v-icon>
     </div>
   </v-app>
 </template>
