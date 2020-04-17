@@ -14,6 +14,9 @@
           <slot name="text"></slot>
         </v-card-text>
       </div>
+      <v-card-actions>
+        <slot name="btn"></slot>
+      </v-card-actions>
     </v-card>
   </v-layout>
 </template>

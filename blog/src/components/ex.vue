@@ -3,14 +3,20 @@
     <Dynamic>
       <div slot="header" :class="{ 'header' :create}">
         {{title}}
-        <v-btn color="white darken-2" black right absolute @click="pageToPost()">
+        <v-btn text color="deep-purple accent-4" right absolute @click="pageToPost()">
           <v-icon dark left>mdi-keyboard-backspace</v-icon>Back
         </v-btn>
       </div>
       <div slot="subtitle" :class="{'subtitle':create}">{{subtitle}}</div>
       <div slot="text">
-        <component :is="dynamicComponent" />
-        <v-btn color="white darken-2" px-4 black left absolute @click="pageToPost()">
+        <component :is="dynamicComponent"></component>
+      </div>
+
+      <!-- <v-btn color="white darken-2" px-4 black left absolute @click="pageToPost()">
+          <v-icon dark left>mdi-keyboard-backspace</v-icon>Back TO Post
+      </v-btn>-->
+      <div slot="btn">
+        <v-btn text color="deep-purple accent-4" @click="pageToPost()">
           <v-icon dark left>mdi-keyboard-backspace</v-icon>Back TO Post
         </v-btn>
       </div>
@@ -38,6 +44,7 @@ export default {
     // const markdown = require(`@/posts/${this.fileName}.md`);
     this.title = this.markdown.attributes.title;
     this.subtitle = this.markdown.attributes.subtitle;
+
     this.dynamicComponent = this.markdown.vue.component;
 
     // Use Async Components for the benefit of code splitting
@@ -51,6 +58,7 @@ export default {
     },
     pageToPost() {
       this.$router.push({ name: "ContentList" });
+      console.log(this.dynamicComponent);
     }
   },
 
@@ -64,9 +72,7 @@ export default {
 .font {
   font-family: "Raleway";
 }
-.backButton {
-  /* margin-left: 520px; */
-}
+
 .header {
   color: #2196f3;
   cursor: pointer;
