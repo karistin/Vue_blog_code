@@ -58,7 +58,6 @@ export default {
     },
     pageToPost() {
       this.$router.push({ name: "ContentList" });
-      console.log(this.dynamicComponent);
     }
   },
 
