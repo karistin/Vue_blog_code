@@ -5,6 +5,10 @@ import Editor from "v-markdown-editor";
 import router from "./router";
 import store from "./store";
 import vuetify from "./plugins/vuetify";
+import "highlight.js/styles/default.css";
+import Highlight from "vue-markdown-highlight";
+
+Vue.use(Highlight);
 
 Vue.use(Editor);
 Vue.config.productionTip = false;

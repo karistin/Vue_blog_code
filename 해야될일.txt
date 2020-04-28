@@ -9,13 +9,29 @@ https://blog.naver.com/PostView.nhn?blogId=ablue85470&logNo=221341862577&categor
 https://blog.g40n.xyz
 만들어 보고싶은 사이트 + 
 
+
+https://kr.vuejs.org/v2/examples/hackernews.html
+vue ㅁㅊㄷㄻㅊㄷㄹ
+
 https://v1.vuetifyjs.com/en/components/floating-action-buttons/#buttons-floating-action-button
 vuetifyjs
 버튼 공부 
 
+https://inchijeong.github.io/markdown/2019/03/20/markdown.html
+md 보는중 
+
+https://www.npmjs.com/package/vue-markdown-highlight
+md highlight
+
+https://github.com/miaolz123/vue-markdown
+
+https://miaolz123.github.io/vue-markdown/
+
+해결책 1
 
 
-
+github md css 사용 
+해결책 2
 
 2차 
 https://hyunto.github.io/all-categories/

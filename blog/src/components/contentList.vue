@@ -3,7 +3,7 @@
     <TextCard v-for="(post , index) in posts" :key="index">
       <div slot="header" class="header" @click="page(index)" v-html="post.attributes.title"></div>
       <div slot="subtitle" class="subtitle" v-html="post.attributes.subtitle"></div>
-      <div slot="text" v-html="post.attributes.header"></div>
+      <div slot="text" v-html="post.html.slice(0,200)"></div>
       <div slot="btn" @click="page(index)">Read More...</div>
     </TextCard>
   </v-layout>

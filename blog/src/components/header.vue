@@ -1,9 +1,18 @@
 <template>
-  <h1 class="text-center">S4JN's blog</h1>
+  <div>
+    <h1 class="text-center">S4JN's blog</h1>
+    <div v-highlight v-html="content"></div>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      content: "# h1"
+    };
+  }
+};
 </script>
 
 <style scoped>

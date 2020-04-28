@@ -1,7 +1,9 @@
 <template>
   <v-app style="background-color: #f9fafc">
-    <v-container style="max-width: 900px; 
-    margin: 0px auto;">
+    <v-container
+      style="max-width: 900px; 
+    margin: 0px auto;"
+    >
       <v-layout column>
         <!-- 타이틀  -->
         <Header></Header>
@@ -34,5 +36,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
