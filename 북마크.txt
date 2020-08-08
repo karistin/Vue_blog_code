@@ -74,6 +74,8 @@ JS문법
     http://blog.naver.com/PostList.nhn?blogId=airteltour&from=postList&categoryNo=62
     여행갈곳
 
+    http://www.horangi.kr/rttour/
+    여행지 
 ppt
 
     https://ovenapp.io/

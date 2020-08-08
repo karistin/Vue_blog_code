@@ -1,16 +1,13 @@
 <template>
   <div>
     <h1 class="text-center">S4JN's blog</h1>
-    <div v-highlight v-html="content"></div>
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      content: "# h1"
-    };
+    return {};
   }
 };
 </script>
